@@ -8,12 +8,16 @@ logging.basicConfig(level=logging.INFO,
 project_name = "icebreaker"
 
 list_of_files = [
-    ".github/workflows/.gitkeep",
     f"{project_name}/__init__.py",
     f"{project_name}/modules/__init__.py",
     f"{project_name}/modules/app.py",
     f"{project_name}/modules/config.py",
     f"{project_name}/modules/main.py",
+    f"{project_name}/modules/data_extraction.py",
+    f"{project_name}/modules/data_processing.py",
+    f"{project_name}/modules/llm_interface.py",
+    f"{project_name}/modules/query_engine.py",
+    f"{project_name}/modules/output_schema.py",
     ".env"
 ]
 

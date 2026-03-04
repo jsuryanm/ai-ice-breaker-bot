@@ -25,3 +25,6 @@ llama-index-vector-stores-chroma
 llama-index-llms-groq
 llama-index-readers-web
 llama-hub
+requests
+scipy 
+scikit-learn
