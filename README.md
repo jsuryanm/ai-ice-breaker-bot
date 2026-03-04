@@ -116,7 +116,9 @@ cd ai-ice-breaker-bot
 ## 2. Create a virtual environment
 
 ```
-python -m venv .venv
+pip install uv 
+uv venv .venv --python 3.12.12
+uv init
 ```
 
 Activate it:
@@ -138,7 +140,7 @@ source .venv/bin/activate
 ## 3. Install dependencies
 
 ```
-pip install -r requirements.txt
+uv add -r requirements.txt
 ```
 
 Example dependencies:
@@ -161,11 +163,11 @@ Create a `.env` file in the project root:
 
 ```
 GROQ_API_KEY=your_groq_api_key
-PROXYCURL_API_KEY=your_proxycurl_api_key
+PROXYCURL_API_KEY=your_proxycurl_api_key 
 ```
 
 You can also run the application using **mock LinkedIn data** if you don't have a ProxyCurl key.
-
+Note: In this project I had used the mock data.
 ---
 
 # Running the Application
